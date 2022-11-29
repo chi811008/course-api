@@ -34,7 +34,6 @@ class Api::V1::CourseController < ApplicationController
 
 
   private
-
     def set_course
       @course = Course.find(params[:id])
     end
