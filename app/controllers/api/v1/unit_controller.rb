@@ -3,7 +3,7 @@ class Api::V1::UnitController < ApplicationController
   before_action :set_course
 
   def index
-    units = Unit.all
+    units = Unit.order(:order)
     render json: {status: "SUCCESS", message: "List of Units", data: units}, status: :ok
   end
   
