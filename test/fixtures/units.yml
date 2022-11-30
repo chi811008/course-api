@@ -4,8 +4,14 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  order: 1
+  name: 資料庫正規化
+  description: NF1
+  content: NF1, NF2, NF3
+
+two: 
+  order: 2
+  name: SQL query
+  description: select, where
+  content: select 欄位 from table where
