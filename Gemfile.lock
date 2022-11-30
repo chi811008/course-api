@@ -139,6 +139,7 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     sqlite3 (1.5.4-arm64-darwin)
+    swagger-blocks (3.0.0)
     thor (1.2.1)
     timeout (0.3.0)
     tzinfo (2.0.5)
@@ -157,6 +158,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4)
   sqlite3 (~> 1.4)
+  swagger-blocks
   tzinfo-data
 
 RUBY VERSION
