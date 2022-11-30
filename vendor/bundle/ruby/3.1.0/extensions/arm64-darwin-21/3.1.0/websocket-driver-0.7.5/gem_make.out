@@ -1,0 +1,15 @@
+current directory: /Users/cuiyaqing/Workspace/course-api/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/cuiyaqing/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/cuiyaqing/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/cuiyaqing/Workspace/course-api/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20221130-90328-ludk2t sitelibdir\=./.gem.20221130-90328-ludk2t clean
+
+current directory: /Users/cuiyaqing/Workspace/course-api/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20221130-90328-ludk2t sitelibdir\=./.gem.20221130-90328-ludk2t
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/cuiyaqing/Workspace/course-api/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20221130-90328-ludk2t sitelibdir\=./.gem.20221130-90328-ludk2t install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20221130-90328-ludk2t
