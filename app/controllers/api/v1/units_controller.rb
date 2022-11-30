@@ -1,10 +1,10 @@
-class Api::V1::UnitController < ApplicationController
-  before_action :set_unit, only: %i[ show edit update destroy ]
+class Api::V1::UnitsController < ApplicationController
   before_action :set_course
+  before_action :set_unit, only: %i[ show edit update destroy ]
 
   def index
-    units = Unit.order(:order)
-    render json: {status: "SUCCESS", message: "List of Units", data: units}, status: :ok
+    @units = @course.unit.order(:order)
+    render json: {status: "SUCCESS", message: "List of Units", data: @units}, status: :ok
   end
   
   def show
@@ -39,7 +39,7 @@ class Api::V1::UnitController < ApplicationController
 	  end
   
 	  def set_unit
-		@unit = Unit.find(params[:id])
+		@unit = @course.unit.find(params[:id])
 	  end
   
 	  def unit_params
