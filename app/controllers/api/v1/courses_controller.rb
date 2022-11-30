@@ -1,5 +1,39 @@
-class Api::V1::CourseController < ApplicationController
+class Api::V1::CoursesController < ApplicationController
   before_action :set_course, only: %i[ show edit update destroy ]
+
+  include Swagger::Blocks
+
+  swagger_path '/courses' do
+    operation :get do
+      key :summary, '顯示全部課程'
+      key :description, '顯示全部課程'
+      key :operationId, 'findCourses'
+      key :produces, [
+        'application/json'
+      ]
+      key :tags, [
+        "course"
+      ]
+      parameter do
+        key :name, :page
+        key :in, :query
+        key :description, '頁數'
+        key :type, :integer
+      end
+      response 200 do
+        key :description, '成功回應'
+        schema do
+          property :success, example: true
+          property :courses do
+            items do
+              key :'$ref', :CourseOutput
+            end
+          end
+          property :units, '$ref': :Units
+        end
+      end
+    end
+  end
 
   def index
     courses = Course.all
