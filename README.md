@@ -9,7 +9,9 @@
         - `gem install rails`
     3. 進入專案
         - `cd course-api`
-    4. 執行 server
+    4. install gem
+        - `bundle install`
+    5. 執行 server
         - `rails server`
 - 專案的架構，API server 的架構邏輯
     - App 底下包含
